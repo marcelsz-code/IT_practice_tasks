@@ -1,0 +1,14 @@
+###
+# A program that calculates
+# how many letters are between two given letters
+#A and D (2 letters)
+#B and M (10 letters)
+#K and K (0 letters)
+first = input('Enter first letter: ')
+last = input('Enter last letter: ')
+first_letter_code = ord(first)
+print(ord(first))
+print(ord(last))
+last_letter_code = ord(last)
+number_of_letters = max(0, last_letter_code - first_letter_code -1) #funkcja max zamienia -1 z K do K na 0
+print(f'Between {first} and {last} is {number_of_letters} letters')
